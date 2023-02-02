@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@400;700&family=Karla:wght@400;700&family=Lexend+Deca&family=Montserrat:wght@500;700&family=Open+Sans&family=Outfit:wght@300;400;600&family=Poppins:wght@400;600&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+}
+
+body {
+    background-color: var(--Light-Gray);
+    font-family: 'Karla', sans-serif;
+    min-height: 100vh;
+    position: relative;
+    font-size: 16px;
+}
+
+
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    width: 650px;
+}
+
+.title {
+    padding-top: 30px;
+    padding-left: 30px;
+    color: var(--Cyan);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.pra-title {
+    padding-top: 20px;
+    padding-left: 30px;
+    color: var(--Bright-Yellow);
+    font-weight: 700;
+}
+
+.pragraphe {
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    color: var(--Grayish-Blue);
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    background-color: var(--Cyan);
+    width: 325px;
+    height: 33vh;
+    overflow: hidden;
+    border-bottom-left-radius: 10px;
+}
+
+.left-title {
+    color: white;
+    padding-left: 30px;
+    padding-top: 30px;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.price {
+    color: white;
+    padding-left: 30px;
+    padding-top: 17px;
+    font-size: 35px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+
+}
+
+.price span {
+    display: inline;
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--Light-Gray);
+}
+
+.bottom-left-pra {
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.sing-up {
+    background-color: var(--Bright-Yellow);
+    text-decoration: none;
+    padding-left: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 5px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-left: 35px;
+    border-radius: 5px;
+    font-weight: 700;
+    width: 250px;
+    box-shadow: 25px 25px 25px var(--Cyan);
+}
+
+.right {
+    height: 33vh;
+    width: 325px;
+    background-color: rgb(131, 219, 219);
+    padding-top: 40px;
+    padding-left: 40px;
+}
+
+.right .why-us {
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.right-bottom-pra {
+    padding-top: 20px;
+    color: hsl(204, 43%, 93%);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+@media only screen and (max-width:425px) {
+    body {
+        width: 80%;
+        height: 80vh;
+    }
+
+    .container {
+        margin-left: 35px;
+    }
+
+    .card {
+        width: 325px;
+    }
+
+    .bottom {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left {
+        border-radius: 0;
+    }
+
+    .right {
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+}
+
+.attribution {
+    text-align: center;
+    padding-top: 10px;
+}
